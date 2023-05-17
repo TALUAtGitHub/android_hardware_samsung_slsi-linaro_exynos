@@ -52,6 +52,7 @@ int HAL_PIXEL_FORMAT_2_V4L2_PIX(
     switch (hal_pixel_format) {
     case HAL_PIXEL_FORMAT_RGBA_8888:
     case HAL_PIXEL_FORMAT_RGBX_8888:
+    case HAL_PIXEL_FORMAT_RGBA_1010102:
         v4l2_pixel_format = V4L2_PIX_FMT_RGB32;
         break;
 
