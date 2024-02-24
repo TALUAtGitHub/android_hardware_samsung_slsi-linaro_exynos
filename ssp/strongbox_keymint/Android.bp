@@ -43,7 +43,7 @@ cc_defaults {
     ],
     shared_libs: [
         "android.hardware.keymaster@4.0",
-        "android.hardware.security.keymint-V3-ndk",
+        "android.hardware.security.keymint-V2-ndk",
         "android.hardware.security.sharedsecret-V1-ndk",
         "android.hardware.security.secureclock-V1-ndk",
         "libbase",
@@ -58,7 +58,7 @@ cc_defaults {
         "libMcClient",
         "libkeymint",
         "libbinder_ndk",
-        "libcppbor_external",
+        "libcppbor",
     ],
 }
 
@@ -85,7 +85,7 @@ cc_binary {
     compile_multilib: "64",
     shared_libs: [
         "android.hardware.keymaster@4.0",
-        "android.hardware.security.keymint-V3-ndk",
+        "android.hardware.security.keymint-V2-ndk",
         "android.hardware.security.sharedsecret-V1-ndk",
         "android.hardware.security.secureclock-V1-ndk",
         "libbase",
@@ -100,7 +100,7 @@ cc_binary {
         "libkeymaster4support",
         "libkeymint",
         "libbinder_ndk",
-        "libcppbor_external",
+        "libcppbor",
     ],
     required: [
         "android.hardware.strongbox_keystore.xml",
